@@ -39,6 +39,10 @@ public class Int_01 {
 		 * 각각 5와 3을 넣기
 		 * 저장공간의 각 값들을 4칙연산하여 출력하기
 		*/
+		
+		int sum = number+number2;
+		System.out.println(number + "+" + number2 + "=" + sum);
+		
 	}
 
 }
