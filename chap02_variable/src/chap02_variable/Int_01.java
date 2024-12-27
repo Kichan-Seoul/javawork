@@ -7,8 +7,8 @@ public class Int_01 {
 		 * 변수 : 저장공간 
 		 * 
 		 * int : 정수를 저장하는 공간(4byte(32bit)) 
-		 * double : 실수를 저장하는 공간
-		 * char : 문자1개
+		 * double : 실수를 저장하는 공간(8byte)
+		 * char : 문자1개(2byte, 유니코드)
 		 * String : 문자열
 		 */
 		
