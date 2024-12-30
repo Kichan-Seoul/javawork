@@ -11,7 +11,7 @@ public class Promotion_01 {
 		
 		char ch1 = '찬';
 		int int2 = ch1;
-		System.out.println("김의 유니코드 : " + int2);
+		System.out.println("찬의 유니코드 : " + int2);
 		System.out.println(ch1);
 		
 		double d1 = int1;

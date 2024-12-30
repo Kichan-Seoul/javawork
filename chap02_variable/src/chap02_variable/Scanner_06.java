@@ -64,7 +64,7 @@ public class Scanner_06 {
 			System.out.println(num1 + "-" + num2 + "=" + (num1-num2));
 		else if(op == '*')
 			System.out.println(num1 + "*" + num2 + "=" + (num1*num2));
-		else if(opp == '/')
+		else if(op == '/')
 			System.out.println(num1 + "/" + num2 + "=" + (num1/num2));
 	}
 }
