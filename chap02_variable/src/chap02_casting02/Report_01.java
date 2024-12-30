@@ -48,8 +48,8 @@ public class Report_01 {
 		int i3 = (int)(iNum1/fNum);
 		System.out.println(i3);
 		//3.6
-		float f1 = iNum1/fNum;
-		System.out.println(f1);
+		double d3 = (double)(iNum1/fNum);
+		System.out.println(d3);
 		//3.7
 		int i4 = ch;
 		System.out.println(i4);
