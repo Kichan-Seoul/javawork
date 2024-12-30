@@ -7,11 +7,16 @@ public class Report_08 {
 		// 총점과 평균(소수점2째자리까지(반올림)) 출력
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("국어 점수 : ");
+		/*System.out.println("국어 점수 : ");
 		int kor = scan.nextInt();
 		System.out.println("수학 점수 : ");
 		int mth = scan.nextInt();
 		System.out.println("컴퓨터 점수 : ");
+		int com = scan.nextInt();*/
+		
+		System.out.print("점수 입력(국어, 수학, 컴퓨터점수를 띄어쓰기로 넣으시오) : ");
+		int kor = scan.nextInt();
+		int mth = scan.nextInt();
 		int com = scan.nextInt();
 		
 		int sum = kor + mth + com;
