@@ -39,14 +39,32 @@ public class Scanner_06 {
 		System.out.println("성의 이니셜은 : " + initial);
 		*/
 		
-		System.out.println("정수 3개 입력(띄어쓰기로) >> ");
+		/*System.out.println("정수 3개 입력(띄어쓰기로) >> ");
 		int num1 = scan.nextInt();
 		int num2 = scan.nextInt();
 		int num3 = scan.nextInt();
 		System.out.println("첫번째 숫자 : " + num1);
 		System.out.println("두번째 숫자 : " + num2);
 		System.out.println("세번째 숫자 : " + num3);
+		*/
 		
+		System.out.println("정수 2개 입력(띄어쓰리고) >>");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		System.out.println(num1 + "+" + num2 + "=" + (num1+num2));
+		System.out.println(num1 + "-" + num2 + "=" + (num1-num2));
+		System.out.println(num1 + "*" + num2 + "=" + num1*num2);
+		System.out.println(num1 + "/" + num2 + "=" + num1/num2);
 		
+		System.out.print("연산자를 입력하세요 : ");
+		char op = scan.next().charAt(0);
+		if(op == '+')
+			System.out.println(num1 + "+" + num2 + "=" + (num1+op+num2));
+		else if(op == '-')
+			System.out.println(num1 + "-" + num2 + "=" + (num1-num2));
+		else if(op == '*')
+			System.out.println(num1 + "*" + num2 + "=" + (num1*num2));
+		else if(opp == '/')
+			System.out.println(num1 + "/" + num2 + "=" + (num1/num2));
 	}
 }
