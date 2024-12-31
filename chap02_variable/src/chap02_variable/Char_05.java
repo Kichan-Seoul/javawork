@@ -11,7 +11,7 @@ public class Char_05 {
 		char ch2 = 'a' + 1;	// 유니코드 97 + 1 = 98 -> 유니코드는 'b'
 		System.out.println(ch2);
 		
-		char ch3 'A';
+		char ch3 = 'A';
 		int result = ch3 + 1; // 리터럴값이 아닌 나중에 더하면 오류가 남
 		//	int = char + int
 		// 형변환시 int이하는 연산을 하면 모두 int형으로 형변환이됨
