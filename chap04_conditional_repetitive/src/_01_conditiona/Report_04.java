@@ -9,7 +9,8 @@ public class Report_04 {
 		   세 과목 점수가 각각 40점 이상이면서 평균이 60점 이상일 때 합격, 아니라면 불합격을 출력하세요.
 		   (if문으로)*/
 		Scanner scan = new Scanner(System.in);
-		/*System.out.println("국어, 영어, 수학 점수를 입력하십시오.");
+		
+		System.out.println("국어, 영어, 수학 점수를 입력하십시오.");
 		int kor = scan.nextInt();
 		int eng = scan.nextInt();
 		int math = scan.nextInt();
@@ -18,14 +19,14 @@ public class Report_04 {
 			System.out.println("합격");
 		} else {
 			System.out.println("불합격");
-		}*/
+		}
 		
 		/*2. id와 비밀번호를 변수에 저장하고
 		   사용자로부터 아이디와 비밀번호를 입력 받아
 		   아이디와 비밀번호가 모두 맞으면 "로그인 성공"출력
 		   아이디가 틀렸으면 "아이디가 틀렸습니다"출력
 		   비밀번호가 틀렸으면 "비밀번호가 틀렸습니다"출력*/
-		/*int id = 2345;
+		int id = 2345;
 		int password = 1234;
 		System.out.println("ID와 비밀번호를 입력하세요.");
 		int uid = scan.nextInt();
@@ -38,7 +39,7 @@ public class Report_04 {
 			}
 		} else {
 			System.out.println("아이디가 틀렸습니다");
-		}*/
+		}
 		
 		
 		/*3. 키, 몸무게를 double로 입력 받고 BMI지수를 계산하여 
@@ -107,7 +108,37 @@ public class Report_04 {
 			출석 회수 : 10
 			============= 결과 ============
 			Fail [출석 횟수 부족(10/20)]*/
-
+		System.out.println("다음 항목들을 입력하시오.");
+		System.out.println("중간고사 : ");
+		int middletest = scan.nextInt();
+		System.out.println("기말고사 : ");
+		int finaltest = scan.nextInt();
+		System.out.println("과제 : ");
+		int mission = scan.nextInt();
+		System.out.println("출석 횟수 : ");
+		int check = scan.nextInt();
+		
+		int middleH = middletest/(100/20);
+		int finalH = finaltest/(100/30);
+		int missionH = mission/(100/30);
+		int checkH = check;
+		int total = middleH + finalH + missionH + checkH;
+		
+		System.out.println("============ 결과 ============" + 
+							"\n중간고사 점수(20) : " + middleH + 
+							"\n기말고사 점수(30) : " + finalH +
+							"\n과제 점수(30) : " + missionH +
+							"\n출석 횟수 : " + checkH +
+							"\n총점 : " + total);
+		if(total >= 70) {
+			if(check > 20*0.7) {
+				System.out.println("Pass");
+			} else {
+				System.out.println("Fail [출석 횟수 부족{" + check + "/20)]");
+			}
+		} else {
+			System.out.println("Fail [점수 미달]");
+		}
 	}
 
 }
