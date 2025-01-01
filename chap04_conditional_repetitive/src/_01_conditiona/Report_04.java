@@ -16,9 +16,9 @@ public class Report_04 {
 		int math = scan.nextInt();
 		int avg = (kor + eng + math)/3;
 		if(kor >= 40 && eng >= 40 && math >= 40 && avg >= 60) {
-			System.out.println("합격");
+			System.out.println("평균점수 : " + avg + "점으로 합격입니다");
 		} else {
-			System.out.println("불합격");
+			System.out.println("평균점수 : " + avg + "점으로 불합격입니다\n");
 		}
 		
 		/*2. id와 비밀번호를 변수에 저장하고
@@ -28,7 +28,7 @@ public class Report_04 {
 		   비밀번호가 틀렸으면 "비밀번호가 틀렸습니다"출력*/
 		int id = 2345;
 		int password = 1234;
-		System.out.println("ID와 비밀번호를 입력하세요.");
+		System.out.println("\nID와 비밀번호를 입력하세요.");
 		int uid = scan.nextInt();
 		int upassword = scan.nextInt();
 		if(uid == id) {
@@ -50,7 +50,7 @@ public class Report_04 {
 			BMI가 18.5미만일 경우 저체중 / 18.5이상 23미만일 경우 정상체중
 			BMI가 23이상 25미만일 경우 과체중 / 25이상 30미만일 경우 비만
 			BMI가 30이상일 경우 고도 비만*/
-		System.out.println("키와 몸무게를 입력하시오");
+		System.out.println("\n키와 몸무게를 입력하시오");
 		double height = scan.nextDouble();
 		double weight = scan.nextDouble();
 		double bmi = weight / ((height * height) * 0.0001);
@@ -108,7 +108,7 @@ public class Report_04 {
 			출석 회수 : 10
 			============= 결과 ============
 			Fail [출석 횟수 부족(10/20)]*/
-		System.out.println("다음 항목들을 입력하시오.");
+		System.out.println("\n다음 항목들을 입력하시오.");
 		System.out.println("중간고사 : ");
 		int middletest = scan.nextInt();
 		System.out.println("기말고사 : ");
