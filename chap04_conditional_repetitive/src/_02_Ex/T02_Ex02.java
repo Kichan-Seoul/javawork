@@ -121,6 +121,7 @@ public class T02_Ex02 {
 		(3)
 		(6)
 		총 주사위 굴린 횟수는 : 2회*/
+		int count = 0;
 		
 	}
 		
