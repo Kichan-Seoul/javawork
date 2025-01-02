@@ -100,7 +100,21 @@ public class T02_Ex02 {
 		  ******* 
 		 ********* */
 		
-		
+		int rows = 5;
+		for (int i = 1; i <= rows; i++) {
+            // 공백 출력
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // 별 출력
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+
+            // 줄 바꿈
+            System.out.println();
+		}
 		
 		/*8.	주사위의 눈이 6이 나올때까지 계속 반복해서 굴리고, 눈이 6이 되면 지금까지 주사위를 굴린 횟수까지
 			출력하는 코드를 작성하시오. (while문으로 반복, 주사위는 Math.random()으로 작성)
@@ -108,8 +122,8 @@ public class T02_Ex02 {
 		(6)
 		총 주사위 굴린 횟수는 : 2회*/
 		
-		
-		
 	}
+		
+}	
 
-}
+
