@@ -1,4 +1,4 @@
-package _01_conditiona;
+package _02_Ex;
 
 import java.util.Scanner;
 
@@ -117,12 +117,12 @@ public class Report_04 {
 		int mission = scan.nextInt();
 		System.out.println("출석 횟수 : ");
 		int check = scan.nextInt();
-		
-		int middleH = middletest/(100/20);
-		int finalH = finaltest/(100/30);
-		int missionH = mission/(100/30);
-		int checkH = check;
-		int total = middleH + finalH + missionH + checkH;
+		 
+		double middleH = middletest * 0.2;
+		double finalH = finaltest * 0.3;
+		double missionH = mission * 0.3;
+		double checkH = check;
+		double total = middleH + finalH + missionH + checkH;
 		
 		System.out.println("============ 결과 ============" + 
 							"\n중간고사 점수(20) : " + middleH + 
