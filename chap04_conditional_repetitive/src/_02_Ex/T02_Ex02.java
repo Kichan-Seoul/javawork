@@ -121,7 +121,19 @@ public class T02_Ex02 {
 		(3)
 		(6)
 		총 주사위 굴린 횟수는 : 2회*/
-		int count = 0;
+		int count = 1;
+		while(true) {
+			int num = (int)(Math.random()*6)+1;
+			System.out.println("추출한 숫자 : " + num);
+			if(num == 6) {
+				break;
+			} 
+			count++; 
+		}
+		System.out.println("주사위가 6이 나올때까지 굴린 총 횟수 : " + count);
+				
+			
+		
 		
 	}
 		
