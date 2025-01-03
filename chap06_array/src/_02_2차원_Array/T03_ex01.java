@@ -28,23 +28,34 @@ public class T03_ex01 {
 		System.out.println("아무 숫자나 적어봐");
 		int num1 = sc.nextInt();
 		int[] arr3 = new int[num1];
-		for(int i=0; i<arr3.length; i++); {
+		for(int i=0; i<arr3.length; i++) {
 			arr3[i] = i+1;
 		}
 		System.out.println(Arrays.toString(arr3));
 		
 		/*4. 길이가 5일 배열에 사과,귤,포도,복숭아,참외로 초기화한후
-		   배열 인덱스를 이용하여 귤 출력
+		   배열 인덱스를 이용하여 귤 출력*/
+		String[] arr4 = {"사과", "귤", "포도", "복숭아", "참외"};
+		System.out.println(arr4[1]);
 		
-		5. 문자열을 입력 받아 문자 하나하나를 배열에 넣고 검색할 문자가 문자열에 몇 개 들어가 있는지
+		/*5. 문자열을 입력 받아 문자 하나하나를 배열에 넣고 검색할 문자가 문자열에 몇 개 들어가 있는지
 		   개수와 몇 번째 인덱스에 위치하는지 인덱스를 출력
 		   ex)
 		   문자열 : application
 		   문자 : i
 		   application에 i가 존재하는 위치(인덱스) : 4 8 
-		   i 개수 : 2
+		   i 개수 : 2*/
+		System.out.println("문자열 입력 : ");
+		String s1 = sc.next();
+		System.out.println("문자 입력 : ");
+		char ch1 = sc.next().charAt(0);
+		int[] words = new int[s1.length()];
+		int count = 0;
 		
-		6. 배열에 요일(월,화,수,목,금,토,일)을 초기화하여 넣고 사용자로 부터 0~6사이의 숫자를 입력받아
+		
+		
+		
+		/*6. 배열에 요일(월,화,수,목,금,토,일)을 초기화하여 넣고 사용자로 부터 0~6사이의 숫자를 입력받아
 		   숫자와 같은 요일 출력
 		   ex.
 		   0 ~ 6 사이 숫자 입력 : 4			

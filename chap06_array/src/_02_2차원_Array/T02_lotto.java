@@ -36,7 +36,7 @@ public class T02_lotto {
 		// 오름차순 정렬로 정렬하기
 		Scanner sc = new Scanner(System.in);
 		int[] numbers = new int[5];
-		for(int i=0; i<numbers.length; i++); {
+		for(int i=0; i<numbers.length; i++) {
 			numbers[i] = sc.nextInt();
 			System.out.println("정수" + (i + 1) + "입력");
 			
