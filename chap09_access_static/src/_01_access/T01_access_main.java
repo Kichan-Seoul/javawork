@@ -9,7 +9,7 @@ public class T01_access_main {
 		
 		System.out.println(ac.PI);
 		//stem.out.println(ac.name));
-		//ac.name = "기찬";
+		//ac.name = "기찬"; // private라서 접근 불가
 		ac.setName("Kichan");
 		String name = ac.getName();
 		System.out.println(name);

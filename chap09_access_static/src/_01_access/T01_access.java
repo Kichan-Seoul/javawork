@@ -23,4 +23,10 @@ public class T01_access {
 	String getName() {
 		return name;
 	}
+	/*
+	final : 마지막
+	final 변수 -> 상수
+	final 메소드 -> 오버라이딩 불가
+	final 클래그 -> 상속 불가
+	*/
 }
