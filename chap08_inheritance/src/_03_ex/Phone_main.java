@@ -11,7 +11,6 @@ public class Phone_main {
 		p1.response();
 		p1.hangUp();
 		p1.search();
-		p1.bell();
 		
 		
 		
