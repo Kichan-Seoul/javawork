@@ -2,10 +2,10 @@ package _03_bank;
 
 public class Bank {
 	private int balance;
-	void setBalance(int balance) {
+	public void setBalance(int balance) {
 		this.balance = balance;
 	}
-	void getBalance() {
+	public void getBalance() {
 		System.out.println("Balance : " + balance + "원");	
 	}
 
@@ -14,14 +14,14 @@ public class Bank {
 		return balance;
 	}
 	*/
-	void deposit(int dWon) {
+	public void deposit(int dWon) {
 		balance += dWon;
 		System.out.println(dWon + "원 입금");
 		
 		
 	}
 	
-	void withdrawal(int wWon) {
+	public void withdrawal(int wWon) {
 		if(wWon > balance) {
 			System.out.println("잔액이 부족합니다.");
 		} else {
