@@ -18,7 +18,7 @@ public class Product {
 	    public Product() {
 	        productCount++; // 제품 생성 시 카운트 증가
 	        this.productNumber = "더조은" + productCount; // 고유 제품 번호 설정
-	        System.out.println("고유의 제품번호: " + this.productNumber);
+	        System.out.println("제품번호: " + this.productNumber);
 	        
 	        // 생성된 총 제품 수 출력
 	        System.out.println("생성된 총 제품의 개수: " + productCount);
