@@ -1,8 +1,8 @@
 package _02_polyBuyer;
 
 public class Product {
-	private int price;
-	private int bonusPoint;
+	int price;
+	int bonusPoint;
 	
 	public Product(int pirce) {
 		this.price = price;
