@@ -3,7 +3,7 @@ package _02_userException;
 class NoNumber extends Exception {
 	NoNumber(String message) {
 		super(message);
-	}
+	} 
 }
 
 class Calculator {
