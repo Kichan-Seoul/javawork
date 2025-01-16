@@ -25,11 +25,15 @@ public class LibraryController {
 	public Book searchBook(String bookTitle) {
 		Book book = null;
 		for(int i = 0; i<aList.size(); i++) {
-			if(aList.get(i).getTitle(bookTitle).equalsIgnoreCase(bookTitle)) {
-				return aList.get(i);
+			if(aList.isEmpty()) {
+				System.out.println("책이 없습니다");
+			break;
+			} else if(bookTitle.equals(aList.get(i).getTitle())) {
+				book = aList.get(i);
+				break;
 			}
 		}
-		return null;
+		return book;
 	}
 	
 	
