@@ -1,0 +1,5 @@
+package _03_enum;
+
+public enum Week {
+	MONDAY, TUSEDAY, WEDNSDAY, THIRSDAY, FRIDAY, SATERDAY, SUNDAY
+}
