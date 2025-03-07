@@ -1,32 +1,22 @@
-package _02_LinkedList;
+package _01_ArrayList;
 
-import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
-public class T01_LinkedList {
+public class T05_BoardVector {
 
 	public static void main(String[] args) {
-		LinkedList<Integer> list = new LinkedList<>();
+		List<Board> list = new Vector<>();
+		list.add(new Board("HTML", "김웹앱", "내용3"));
+		list.add(new Board("JSP", "이제이", "내용4"));
+		list.add(new Board("AWS", "박클라", "내용5"));
 		
-		// 추가
-		list.add(10);
-		list.add(5);
-		list.add(7);
-		list.add(1, 15);
-		list.addFirst(100);  // List() 에는 없는 메소드
-		list.addLast(600);
-		
-		for(Integer in : list) {
-			System.out.println(in);
-		}
-		
-		// 삭제
 		list.remove(1);
-		System.out.println(list);
 		
-		list.remove();	// 맨 앞의 노드 삭제
-		System.out.println(list);
+		Board board = list.get(1);
 		
-		list.removeLast();	// 맨 뒤의 노드 삭제
-		System.out.println(list);
+		for(Board b : list) {
+			System.out.println(b);
+		}
 	}
 }
